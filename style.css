@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:opsz@6..96&family=Merriweather:ital,wght@0,300;1,300&display=swap');
+
+.emain{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background: url(bodyy.jpg);
+}
+
+.nemain{
+    width: 1257px;
+    margin: 0;
+    padding: 0;
+}
+
+.neetmain{
+    width: 100%;
+    float: left;
+}
+
+body{
+    background: url(bodyy.jpg) ;
+    user-select: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+nav{
+    font-family: 'Ububtu',sans-serif;
+    user-select: none;
+
+}
+
+nav ul{
+    display:flex ;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    margin-top: 20px;
+    left: 700px;
+    padding-left: 30px;
+}
+
+.Brand img{
+    width: 49px;
+    padding: 0 8px;
+    border-radius: 20px;
+}
+
+.Brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    user-select: none;
+}
+
+.Brand a{
+    left: -20px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    min-height: 70vh;
+    background: linear-gradient(45deg, #545252, #0f0d0d, #252425, #060606);
+    background-size: 400% 400%;
+    animation: gradientAnimation 60s ease infinite;
+    color: whitesmoke;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 86%;
+    border-radius: 12px;
+    padding: 34px;
+    background-size: cover;
+    user-select: none;
+    background-repeat: no-repeat;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    10% { background-position: 10% 10%; }
+    20% { background-position: 20% 20%; }
+    30% { background-position: 20% 30%; }
+    40% { background-position: 40% 60%; }
+    50% { background-position: 20% 60%; }
+    60% { background-position: 40% 20%; }
+    70% { background-position: 20% 20%; }
+    80% { background-position: 40% 20%; }
+    90% { background-position: 20% 60%; }
+    100% { background-position: 600% 800%; }
+}
+.punjabisinger{
+    min-height: 35vh;
+    margin: 20px 30px;
+    margin-bottom: 0;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    flex-direction:row-reverse;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+    display: flex;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.punjabisinger::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust for border thickness */
+    left: 0px; /* Adjust for border thickness */
+    right: 0px;
+    bottom: -10px;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+    border-radius: 10px; /* Match border-radius of the image */
+    animation: glow 1.6s infinite alternate;
+}
+
+.hp h1{
+    margin-top: 25px;
+    margin-left: -1150px;
+}
+
+.sidhulink{
+    padding-top: 85px;
+}
+
+.imgbackround{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 135px;
+    height: 170px;
+    display: flex;
+    
+}
+
+.imgbackround a{
+    position: relative;
+    left: -170px;
+    top: 3px;
+}
+
+#apic{
+    position: absolute;
+    left: 325px;
+    display: block;
+}
+
+#spic{
+    position: absolute;
+    left: 120px;
+    display: block;
+}
+
+#appic{
+    position: absolute;
+    left: 530px;
+    display: block;
+}
+
+#adpic{
+    position: absolute;
+    left: 740px;
+    display: block;
+}
+
+#dalpic{
+    position: absolute;
+    left: 950px;
+    display: block;
+}
+
+#arjanp{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 4px;
+}
+
+#sl{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 4px;
+}
+
+#cs{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 0px;
+}
+
+.sidhulink img{
+    width: 150px;
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.bottom{
+    position: sticky;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+@media(min-width:1000px){
+    .bottom{
+        height: 130px;
+    }
+}
+
+.icons{
+    position: relative;
+    top: 3vh;
+    
+}
+
+.icons i{
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+@media(min-width:1000px){
+    .icons i{
+        font-size: 30px;
+    }
+}
+
+.songinfo #masterSongName{
+    position: relative;
+    top: -50px;
+}
+
+@media(min-width:1000px){
+    .songinfo #masterSongName{
+        top: -50px;
+    }
+}
+
+#myProgressBar{
+    width: 80%;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.songitemcontainer{
+    margin-top: 60px;
+}
+
+.songItem{
+    height: 70px;
+    display: flex;
+    background-color: rgb(46, 42, 42);
+    color: whitesmoke;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem i{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+.songItem img{
+    width: 60px;
+    margin: 0 23px ;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 10px;
+}
+
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    width: 30px;
+    position: relative;
+    top: -50px;
+    margin-right: 10px;
+}
+
+.songlist #tops{
+    color: white;
+    text-decoration: none;
+    font: bolder;
+    position: relative;
+    left: 90vh;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.songItem span{
+    font-family: Permanentmarker;
+    font-weight: 600;
+    color:  white;
+    font-size: 20px;
+}
+    
+@media(min-width:1000px){
+    .songItem span {
+        font-size: 15px;
+    }
+}
+
+.songItem span i{
+    color: goldenrod;
+    font-size: 60px;
+}
+
+@media(min-width:1000px){
+    .songItem span i{
+        font-size: 35px;
+    }
+}
+
+.songItem i{
+    color: goldenrod;
+}
+.tops{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#top{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    margin: 20px 190px;
+}
+
+#down{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+@media(min-width:1000px){
+    #down{
+        font-size: 25px;
+    }
+}
+
+.singerprofiles{
+    min-height: 35vh;
+    margin: 20px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+}
+
+.singerprofiles::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust for border thickness */
+    left: 0px; /* Adjust for border thickness */
+    right: 0px;
+    bottom: 0px;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+    border-radius: 10px; /* Match border-radius of the image */
+    border-top: transparent;
+    border-bottom: transparent;
+    border-top-left-radius:0 ;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+    border-bottom-left-radius:0 ;
+    animation: glow 1.6s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        border-color: rgba(0, 255, 191, 0.5);
+    }
+    20% {
+        border-color: rgba(0, 255, 132, 0.5);
+    }
+    40% {
+        border-color: rgba(0, 242, 255, 0.5);
+    }
+    60% {
+        border-color: rgb(38, 0, 255);
+    }
+    100% {
+        border-color: rgb(255, 0, 0);
+    }
+}
+
+.singerprofiles img{
+    width: 150px;
+    height: 160px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+.singerprofilesji{
+    min-height: 35vh;
+    margin: 20px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.singerprofilesji::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust for border thickness */
+    left: 0px; /* Adjust for border thickness */
+    right: 0px;
+    bottom: 0px;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+    border-radius: 10px; /* Match border-radius of the image */
+    border-top: transparent;
+    border-top-left-radius:0 ;
+    border-top-right-radius:0 ;
+    animation: glow 1.6s infinite alternate;
+}
+
+
+.singerprofilesji img{
+    width: 150px;
+    height: 160px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+/*songprofile pictures are here*/
+
+#navaanpic{
+    position: absolute;
+    left: 120px;
+    display: block;
+}
+
+#kakapic{
+    position: absolute;
+    left: 325px;
+    display: block;
+}
+
+#shubhpic{
+    position: absolute;
+    left: 530px;
+    display: block;
+}
+
+#sultanpic{
+    position: absolute;
+    left: 740px;
+    display: block;
+}
+
+#jaggipic{
+    position: absolute;
+    left: 950px;
+    display: block;
+}
