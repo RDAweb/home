@@ -164,9 +164,7 @@ function updateGradient() {
     background.style.transition = `background 1s ease-in-out`;
     background.style.background = `linear-gradient(45deg, ${color1}, ${color2}, ${color3})`;
 }
-
 updateGradient();
-
 setInterval(updateGradient, 10000); // Update every 5 seconds
 
 document.addEventListener('DOMContentLoaded', () => {

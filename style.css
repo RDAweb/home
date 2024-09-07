@@ -139,6 +139,21 @@ ul a{
     animation: glow 1.6s infinite alternate;
 }
 
+@media(min-height:1300px){
+    .punjabisinger{
+        min-height: 50vh;
+    }
+}
+@media(max-height:800px){
+    .punjabisinger{
+        min-height: 50vh;
+    }
+}
+@media(max-height:720px){
+    .punjabisinger{
+        min-height: 60vh;
+    }
+}
 .hp h1{
     margin-top: 25px;
     margin-left: -1150px;
@@ -445,6 +460,23 @@ ul a{
     }
 }
 
+
+@media(min-height:1300px){
+    .singerprofiles{
+        min-height: 50vh;
+    }
+}
+@media(max-height:800px){
+    .singerprofiles{
+        min-height: 50vh;
+    }
+}
+@media(max-height:720px){
+    .singerprofiles{
+        min-height: 60vh;
+    }
+}
+
 .singerprofiles img{
     width: 150px;
     height: 160px;
@@ -487,7 +519,21 @@ ul a{
     animation: glow 1.6s infinite alternate;
 }
 
-
+@media(min-height:1300px){
+    .singerprofilesji{
+        min-height: 50vh;
+    }
+}
+@media(max-height:800px){
+    .singerprofilesji{
+        min-height: 50vh;
+    }
+}
+@media(max-height:720px){
+    .singerprofilesji{
+        min-height: 60vh;
+    }
+}
 .singerprofilesji img{
     width: 150px;
     height: 160px;
