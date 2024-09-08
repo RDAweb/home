@@ -5,8 +5,9 @@
     margin: 0;
     padding: 0;
     float: left;
-    background: url(bodyy.jpg);
+    background: transparent;
     user-select: none;
+    background: transparent; /* Dark gradient header */
 }
 
 .nemain{
@@ -32,46 +33,55 @@ body{
 }
 nav{
     font-family: 'Ububtu',sans-serif;
-    user-select: none;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    backdrop-filter: blur(0px); /* Adds a blur effect */
+    background: transparent; /* Semi-transparent black background */
+    box-shadow: 0; /* Adds a shadow for depth */
+    padding: 10px 0;
 }
 
 nav ul{
-    display:flex ;
+    display: flex;
+    justify-content: space-between; /* Spreads items evenly */
     align-items: center;
     list-style-type: none;
-    height: 70px;
-    background-color: transparent;
-    color: whitesmoke;
+    padding: 0;
 }
 
 nav ul li{
     padding: 0 12px;
 }
 
-ul a{
-    color: white;
+nav a {
+    color: #ffffff; /* Light color for contrast */
     text-decoration: none;
     font-weight: 600;
-    font-size: 25px;
-    position: relative;
-    margin-top: 20px;
-    left: 700px;
-    padding-left: 30px;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background 0.3s ease; /* Smooth transition on hover */
+}
+.navbar a:hover {
+    color: #1eded5; /* Highlight color on hover */
+    background: rgba(255, 255, 255, 0.1); /* Subtle background highlight on hover */
+    border-radius: 20px; /* Smooth rounded corners */
 }
 
 .Brand img{
-    width: 49px;
-    padding: 0 8px;
-    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular logo */
+    margin-right: 10px;
 }
 
 .Brand{
     display: flex;
     align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
-    user-select: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
 }
 
 .Brand a{
@@ -82,9 +92,6 @@ ul a{
 
 .container{
     min-height: 70vh;
-    background: linear-gradient(45deg, #545252, #0f0d0d, #252425, #060606);
-    background-size: 400% 400%;
-    animation: gradientAnimation 60s ease infinite;
     color: whitesmoke;
     font-family: 'Varela Round', sans-serif;
     display: flex;
@@ -92,9 +99,11 @@ ul a{
     width: 86%;
     border-radius: 12px;
     padding: 34px;
-    background-size: cover;
-    user-select: none;
-    background-repeat: no-repeat;
+    background-size:cover ;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
+    border-radius: 20px; /* Smooth corners */
+    background-image: url(music.jpg);
 }
 
 @keyframes gradientAnimation {
@@ -125,6 +134,7 @@ ul a{
     display: flex;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .punjabisinger::before {
@@ -251,6 +261,7 @@ ul a{
     align-items: center;
     flex-direction: column;
     user-select: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media(min-width:1000px){
@@ -288,23 +299,97 @@ ul a{
     }
 }
 
-#myProgressBar{
-    width: 80%;
-    margin-top: -10px;
-    margin-bottom: 0px;
-    position: absolute;
+#myProgressBar {
+    width: 100%;
+    height: 8px;  /* Increase height for better visibility */
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
     cursor: pointer;
+    top: -36px;
+    appearance: none;
+    transition: background-color 0.3s ease;
 }
 
+/* Style the slider track */
+#myProgressBar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right,blue,red);
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+/* Hover effect for better visual feedback */
+#myProgressBar:hover::-webkit-slider-runnable-track {
+    background: #ff0000;  /* Slightly darker when hovering */
+}
+
+/* Active state when user clicks or drags */
+#myProgressBar:active::-webkit-slider-runnable-track {
+    background: #ff0000;  /* Darker when clicked */
+}
+
+/* Style the thumb (draggable knob) */
+#myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #1b83bc;
+    border-radius: 50%;  /* Make it a circle */
+    margin-top: -4px;  /* Center the thumb vertically */
+    transition: transform 0.2s ease;  /* Smooth transition when clicked */
+}
+
+/* Make the thumb scale up when hovering or active */
+#myProgressBar:hover::-webkit-slider-thumb {
+    transform: scale(1.2);  /* Slightly larger on hover */
+}
+
+#myProgressBar:active::-webkit-slider-thumb {
+    transform: scale(1.4);  /* Even larger when active */
+}
+
+/* Firefox (moz) compatibility */
+#myProgressBar::-moz-range-track {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+#myProgressBar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Transition effect for smooth background color change */
+#myProgressBar {
+    transition: background-color 0.3s ease;
+}
+
+/* Visual transition when dragging */
+#myProgressBar:focus {
+    outline: none;  /* Remove default outline */
+}
+
+
+.songinfo #masterSongName{
+    position: relative;
+    top: -40px;
+    left: -100px;
+}
 
 .songitemcontainer{
     margin-top: 60px;
 }
 
 .songItem{
+    min-width: 700px;
     height: 70px;
     display: flex;
-    background-color: rgb(46, 42, 42);
+    background-color: rgba(46, 42, 42, 0.247);
     color: whitesmoke;
     margin: 12px 0;
     justify-content: space-between;
@@ -334,7 +419,7 @@ ul a{
 .songinfo{
     position: absolute;
     left: 100px;
-    bottom: 40px;
+    bottom: 25px;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -343,8 +428,9 @@ ul a{
     transition: opacity 0.5s ease-in;
     width: 30px;
     position: relative;
-    top: -50px;
+    top: -40px;
     margin-right: 10px;
+    left: -95px;
 }
 
 .songlist #tops{
@@ -572,4 +658,174 @@ ul a{
     position: absolute;
     left: 950px;
     display: block;
+}
+
+#currentTimeDisplay{
+    position: relative;
+    left: -40px;
+    top: -25px;
+}
+
+.icons i:hover {
+    color: #1eded5; /* Change the color on hover */
+    transform: scale(1.2); /* Increase size on hover */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.songItemPlay:hover {
+    color: #1abed0;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.songItem img:hover, #loggo:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.songItem img:hover, #loggo:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px 20px rgba(0, 4, 253, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 204, 0, 0);
+    }
+}
+
+.icons i:hover {
+    animation: pulse 1s infinite;
+}
+
+.songItemPlay:hover {
+    animation: pulse 1s infinite;
+}
+
+.songItem img:hover::before {
+    content: "Now Playing";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.songItem img:hover::before {
+    opacity: 1;
+}
+
+.download-button {
+    background: linear-gradient(to right, #000000, #ffffff);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.download-button:hover {
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #ffffff, #000000);
+    cursor: pointer;
+}
+
+.songItem {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.songItem.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#masterPlay {
+    background-color: #020101; /* Background color for the button */
+    border-radius: 50%; /* Make the button round */
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+#masterPlay.fa-circle-play {
+    background-color: #48b9c1; /* Green background for play */
+    color: rgb(0, 0, 0);
+}
+
+#masterPlay.fa-circle-pause {
+    background-color: #164a8a; /* Red background for pause */
+    color: white;
+}
+
+#masterPlay:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.songItemPlay {
+    background-color: #333; /* Default background color */
+    border-radius: 50%; /* Make the icon round */
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: white; /* Default icon color */
+}
+
+.songItemPlay.fa-circle-play {
+    background-color: #48b9c1; /* Green background for play */
+    color: black;
+}
+
+.songItemPlay.fa-circle-pause {
+    background-color: #164a8a; /* Red background for pause */
+}
+
+.songItemPlay:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.songItemPlay:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+#next, #previous {
+    background-color: #333; /* Default background color */
+    color: white; /* Default icon color */
+    border-radius: 50%; /* Make the buttons round */
+    padding: 10px; /* Add padding to make the buttons larger */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover and click effects */
+}
+
+#next:hover, #previous:hover {
+    background-color: #164a8a; /* Change background color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+#contt{
+    position: relative;
+    left: 400px;
 }
