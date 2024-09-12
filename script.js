@@ -14,7 +14,7 @@ let songs = [
     {songName: "Bebe Bapu (Harsh Likhari)", filePath:"1.mp3", coverPath: "first.jpg"},
     {songName: "Bexley .Road(BAGGH-E SMG x BIG KAY SMG x FARMAAN SMG)", filePath:"2.mp3", coverPath: "2.jpg"},
     {songName: "The Last Ride (Sidhu Moose Wala)", filePath:"3.mp3", coverPath: "3.jpg"},
-    {songName: "Udda Adda (WAZIR PATAR)", filePath:"4.mp3", coverPath: "4.jpg"},
+    {songName: "30 Daab nal", filePath:"4.mp3", coverPath: "4.jpg"},
     {songName: "Lambe Waal 2 (Gill Rohta And Jashanmeet)", filePath:"5.mp3", coverPath: "5.jpg"},
     {songName: "Punjab (Sidhu Moose Wala)", filePath:"6.mp3", coverPath: "6.jpg"},
     {songName: "Sapp Takkre (Pavvy Dhanjal)", filePath:"7.mp3", coverPath: "7.jpg"},
@@ -36,6 +36,7 @@ let songs = [
     {songName: "Rhyme Ain't Done(Navaan Sandhu Ft Sabi Bhinder / Bajwa)", filePath:"23.mp3", coverPath: "23.jpg"},
     {songName: "East Side Flow (Sidhu Moose Wala)", filePath:"24.mp3", coverPath: "24.jpg"},
     {songName: "Maa (Karan Aujla)", filePath:"25.mp3", coverPath: "25.jpg"},
+    {songName: "Udda Adda (WAZIR PATAR)", filePath:"26.mp3", coverPath: "26.jpg"},
 ]
 
 
