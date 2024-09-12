@@ -450,3 +450,25 @@ const observer = new IntersectionObserver((entries) => {
 songItems.forEach(item => observer.observe(item));
 
 
+
+document.getElementById("scrollToPunjabiSinger").addEventListener("click", function() {
+    document.querySelector(".punjabisinger").scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+
+// Function to filter songs based on search input
+document.getElementById('songSearch').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase(); // Get search term in lowercase
+    const songItems = document.querySelectorAll('.songItem'); // Select all song items
+
+    songItems.forEach(song => {
+        const songName = song.querySelector('.songName').innerText.toLowerCase();
+        if (songName.includes(searchTerm)) {
+            song.style.display = ''; // Show song if it matches the search term
+        } else {
+            song.style.display = 'none'; // Hide song if it doesn't match
+        }
+    });
+});
