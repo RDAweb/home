@@ -112,11 +112,11 @@ nav a {
     width: 86%;
     border-radius: 12px;
     padding: 34px;
-    background-size:cover ;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
     border-radius: 20px; /* Smooth corners */
     background-image: url(music.jpg);
+    background-size:cover ;
     margin-top: -45px;
 }
 
