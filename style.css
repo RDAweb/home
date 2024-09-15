@@ -50,10 +50,11 @@ nav{
     top: 0;
     z-index: 1000;
     width: 100%;
-    backdrop-filter: blur(0px); /* Adds a blur effect */
+    backdrop-filter: blur(40px); /* Adds a blur effect */
     background: transparent; /* Semi-transparent black background */
     box-shadow: 0; /* Adds a shadow for depth */
     padding: 10px 0;
+    max-height: 60px;
 }
 
 nav ul{
@@ -495,7 +496,7 @@ nav a {
 .tops{
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 #top{
