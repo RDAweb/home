@@ -37,6 +37,7 @@ let songs = [
     {songName: "East Side Flow (Sidhu Moose Wala)", filePath:"24.mp3", coverPath: "24.jpg"},
     {songName: "Maa (Karan Aujla)", filePath:"25.mp3", coverPath: "25.jpg"},
     {songName: "Udda Adda (WAZIR PATAR)", filePath:"26.mp3", coverPath: "26.jpg"},
+    {songName: "REAL BOSS - STONER", filePath:"27.mp3", coverPath: "27.jpg"},
 ]
 
 
