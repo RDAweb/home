@@ -330,19 +330,19 @@ nav a {
 #myProgressBar::-webkit-slider-runnable-track {
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right,blue,red);
+    background: linear-gradient(to right,rgba(40, 40, 194, 0.884),rgba(238, 47, 47, 0.904));
     border-radius: 5px;
-    transition: background 0.2s ease;
+    transition: background 0.1s ease;
 }
 
 /* Hover effect for better visual feedback */
 #myProgressBar:hover::-webkit-slider-runnable-track {
-    background: #ff0000;  /* Slightly darker when hovering */
+    background: #6ddac2;  /* Slightly darker when hovering */
 }
 
 /* Active state when user clicks or drags */
 #myProgressBar:active::-webkit-slider-runnable-track {
-    background: #ff0000;  /* Darker when clicked */
+    background: #3fe04c;  /* Darker when clicked */
 }
 
 /* Style the thumb (draggable knob) */
@@ -350,7 +350,7 @@ nav a {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
-    background-color: #1b83bc;
+    background-color: #4ff165e1;
     border-radius: 50%;  /* Make it a circle */
     margin-top: -4px;  /* Center the thumb vertically */
     transition: transform 0.2s ease;  /* Smooth transition when clicked */
@@ -411,9 +411,6 @@ nav a {
     align-items: center;
     border-radius: 34px;
 }
-
-
-
 .songItem i{
     margin-left: 20px;
     margin-right: 20px;
@@ -1045,6 +1042,13 @@ nav a {
     top: -110px;
     left: -148px;
 }
+#newbigplaylist{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -216px;
+    left: -270px;
+}
 
 #slnew{
     font-size: 19px;
@@ -1054,4 +1058,12 @@ nav a {
     margin-top: 4px;
     position: relative;
     left: -20px;
+}
+#slp{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 22px;
+    margin-left: -50px;
 }
