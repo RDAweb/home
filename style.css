@@ -1,0 +1,1036 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:opsz@6..96&family=Merriweather:ital,wght@0,300;1,300&display=swap');
+
+.emain{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background: transparent;
+    user-select: none;
+    background: transparent; /* Dark gradient header */
+}
+
+.nemain{
+    width: 1257px;
+    margin: 0;
+    padding: 0;
+}
+
+.neetmain{
+    width: 100%;
+    float: left;
+}
+
+body{
+    background: url(bodyy.jpg) ;
+    user-select: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media(min-width:400px){
+    body{
+        font-size: 25px;
+    }
+}
+@media(min-width:700px){
+    body{
+        font-size: 17px;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+nav{
+    font-family: 'Ububtu',sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    backdrop-filter: blur(40px); /* Adds a blur effect */
+    background: transparent; /* Semi-transparent black background */
+    box-shadow: 0; /* Adds a shadow for depth */
+    padding: 10px 0;
+    max-height: 60px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between; /* Spreads items evenly */
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+nav a {
+    color: #ffffff; /* Light color for contrast */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background 0.3s ease; /* Smooth transition on hover */
+}
+.navbar a:hover {
+    color: #1eded5; /* Highlight color on hover */
+    background: rgba(255, 255, 255, 0.1); /* Subtle background highlight on hover */
+    border-radius: 20px; /* Smooth rounded corners */
+}
+
+.Brand img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular logo */
+    margin-right: 10px;
+}
+
+.Brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Brand a{
+    left: -20px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    min-height: 70vh;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 86%;
+    border-radius: 12px;
+    padding: 34px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
+    border-radius: 20px; /* Smooth corners */
+    background-image: url(music.jpg);
+    background-size:cover ;
+    margin-top: -45px;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    10% { background-position: 10% 10%; }
+    20% { background-position: 20% 20%; }
+    30% { background-position: 20% 30%; }
+    40% { background-position: 40% 60%; }
+    50% { background-position: 20% 60%; }
+    60% { background-position: 40% 20%; }
+    70% { background-position: 20% 20%; }
+    80% { background-position: 40% 20%; }
+    90% { background-position: 20% 60%; }
+    100% { background-position: 600% 800%; }
+}
+.punjabisinger{
+    /* min-height: 45vh; */
+    margin: 20px 30px;
+    margin-bottom: 50px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+    /* display: grid; */
+    /* border-bottom-left-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+    font-family: 'Josefin Sans', sans-serif;
+    animation: glow 1.6s infinite alternate;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+}
+.hp h1{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.sidhulink{
+    padding-top: 85px;
+    display: flex;
+    /* overflow: hidden; */
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 60px;
+}
+
+.panjabisingerslist{
+    overflow-x: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imgbackround{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 135px;
+    height: 170px;
+    display: flex;
+    
+}
+
+.imgbackround a{
+    position: relative;
+    left: -170px;
+    top: 3px;
+}
+/* 
+#apic{
+    position: absolute;
+    left: 325px;
+    display: block;
+}
+
+#spic{
+    position: absolute;
+    left: 120px;
+    display: block;
+}
+
+#appic{
+    position: absolute;
+    left: 530px;
+    display: block;
+}
+
+#adpic{
+    position: absolute;
+    left: 740px;
+    display: block;
+}
+
+#dalpic{
+    position: absolute;
+    left: 950px;
+    display: block;
+}
+
+#arjanp{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 4px;
+} */
+
+#sl{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: -40px;
+}
+
+#cs{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: green;
+    margin-top: 0px;
+}
+
+.sidhulink img{
+    width: 150px;
+    height: 160px;
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.bottom{
+    position: sticky;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.icons{
+    position: relative;
+    /* top: 3vh; */
+    
+}
+
+.icons i{
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 35px;
+}
+#myProgressBar {
+    width: 100%;
+    height: 8px;  /* Increase height for better visibility */
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    top: -40px;
+    appearance: none;
+    transition: background-color 0.3s ease;
+}
+/* Style the slider track */
+#myProgressBar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right,rgba(71, 71, 216, 0.884),rgba(238, 47, 47, 0.904));
+    border-radius: 5px;
+    transition: background 0.1s ease;
+}
+
+/* Hover effect for better visual feedback */
+#myProgressBar:hover::-webkit-slider-runnable-track {
+    background: #6ddac2;  /* Slightly darker when hovering */
+}
+
+/* Active state when user clicks or drags */
+#myProgressBar:active::-webkit-slider-runnable-track {
+    background: #3fe04c;  /* Darker when clicked */
+}
+
+/* Style the thumb (draggable knob) */
+#myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #4ff165e1;
+    border-radius: 50%;  /* Make it a circle */
+    margin-top: -4px;  /* Center the thumb vertically */
+    transition: transform 0.2s ease;  /* Smooth transition when clicked */
+}
+
+/* Make the thumb scale up when hovering or active */
+#myProgressBar:hover::-webkit-slider-thumb {
+    transform: scale(1.2);  /* Slightly larger on hover */
+}
+
+#myProgressBar:active::-webkit-slider-thumb {
+    transform: scale(1.4);  /* Even larger when active */
+}
+
+/* Firefox (moz) compatibility */
+#myProgressBar::-moz-range-track {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+#myProgressBar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Transition effect for smooth background color change */
+#myProgressBar {
+    transition: background-color 0.3s ease;
+}
+
+/* Visual transition when dragging */
+#myProgressBar:focus {
+    outline: none;  /* Remove default outline */
+}
+
+
+.songinfo #masterSongName{
+    position: relative;
+    top: -40px;
+    left: -100px;
+}
+
+.songitemcontainer{
+    margin-top: 60px;
+}
+
+.songItem{
+    min-width: 700px;
+    height: 70px;
+    display: flex;
+    background-color: rgba(46, 42, 42, 0.247);
+    color: whitesmoke;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem i{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+.songItem img{
+    width: 60px;
+    margin: 0 23px ;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 10px;
+}
+
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left: 100px;
+    bottom: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    width: 30px;
+    position: relative;
+    top: -40px;
+    margin-right: 10px;
+    left: -95px;
+}
+
+.songlist #tops{
+    color: white;
+    text-decoration: none;
+    font: bolder;
+    position: relative;
+    left: 90vh;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.songItem span{
+    font-family: Permanentmarker;
+    font-weight: 600;
+    color:  white;
+    font-size: 20px;
+}
+    
+.songItem span i{
+    color: goldenrod;
+    font-size: 40px;
+}
+
+
+.songItem i{
+    color: goldenrod;
+}
+.tops{
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#top{
+    position: relative;
+    top: -70px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    margin: 20px 190px;
+}
+
+#down{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+@media(min-width:1000px){
+    #down{
+        font-size: 25px;
+    }
+}
+
+.singerprofiles{
+    min-height: 35vh;
+    margin: 20px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+}
+
+@media(min-width:400px){
+    .singerprofiles{
+        font-size: 33px;
+    }
+}
+
+.singerprofiles::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust for border thickness */
+    left: 0px; /* Adjust for border thickness */
+    right: 0px;
+    bottom: 0px;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+    border-radius: 10px; /* Match border-radius of the image */
+    border-top: transparent;
+    border-bottom: transparent;
+    border-top-left-radius:0 ;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+    border-bottom-left-radius:0 ;
+    animation: glow 1.6s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        border-color: rgba(0, 255, 191, 0.5);
+    }
+    20% {
+        border-color: rgba(0, 255, 132, 0.5);
+    }
+    40% {
+        border-color: rgba(0, 242, 255, 0.5);
+    }
+    60% {
+        border-color: rgb(38, 0, 255);
+    }
+    100% {
+        border-color: rgb(255, 0, 0);
+    }
+}
+
+
+
+.singerprofiles img{
+    width: 150px;
+    height: 160px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+.singerprofilesji{
+    min-height: 35vh;
+    margin: 20px 30px;
+    margin-top: 0;
+    margin-bottom: 20vh;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.singerprofilesji::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust for border thickness */
+    left: 0px; /* Adjust for border thickness */
+    right: 0px;
+    bottom: 0px;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+    border-radius: 10px; /* Match border-radius of the image */
+    border-top: transparent;
+    border-top-left-radius:0 ;
+    border-top-right-radius:0 ;
+    animation: glow 1.6s infinite alternate;
+}
+
+.singerprofilesji img{
+    width: 150px;
+    height: 160px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+/*songprofile pictures are here*/
+
+/* #navaanpic{
+    position: absolute;
+    left: 120px;
+    display: block;
+}
+
+#kakapic{
+    position: absolute;
+    left: 325px;
+    display: block;
+}
+
+#shubhpic{
+    position: absolute;
+    left: 530px;
+    display: block;
+}
+
+#sultanpic{
+    position: absolute;
+    left: 740px;
+    display: block;
+}
+
+#jaggipic{
+    position: absolute;
+    left: 950px;
+    display: block;
+} */
+
+#currentTimeDisplay{
+    position: relative;
+    left: -40px;
+    top: -25px;
+}
+
+.icons i:hover {
+    color: #1eded5; /* Change the color on hover */
+    transform: scale(1.2); /* Increase size on hover */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.songItemPlay:hover {
+    color: #1abed0;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.songItem img:hover, #loggo:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.songItem img:hover, #loggo:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px 20px rgba(0, 4, 253, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 204, 0, 0);
+    }
+}
+
+.icons i:hover {
+    animation: pulse 1s infinite;
+}
+
+.songItemPlay:hover {
+    animation: pulse 1s infinite;
+}
+
+.songItem img:hover::before {
+    content: "Now Playing";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.songItem img:hover::before {
+    opacity: 1;
+}
+
+.download-button {
+    background: linear-gradient(to right, #000000, #ffffff);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.download-button:hover {
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #ffffff, #000000);
+    cursor: pointer;
+}
+
+.songItem {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.songItem.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#masterPlay {
+    background-color: #020101; /* Background color for the button */
+    border-radius: 50%; /* Make the button round */
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+#masterPlay.fa-circle-play {
+    background-color: #48b9c1; /* Green background for play */
+    color: rgb(0, 0, 0);
+}
+
+#masterPlay.fa-circle-pause {
+    background-color: #164a8a; /* Red background for pause */
+    color: white;
+}
+
+#masterPlay:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.songItemPlay {
+    background-color: #333; /* Default background color */
+    border-radius: 50%; /* Make the icon round */
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: white; /* Default icon color */
+}
+
+.songItemPlay.fa-circle-play {
+    background-color: #48b9c1; /* Green background for play */
+    color: black;
+}
+
+.songItemPlay.fa-circle-pause {
+    background-color: #164a8a; /* Red background for pause */
+}
+
+.songItemPlay:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.songItemPlay:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+#next, #previous {
+    background-color: #333; /* Default background color */
+    color: white; /* Default icon color */
+    border-radius: 50%; /* Make the buttons round */
+    padding: 10px; /* Add padding to make the buttons larger */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover and click effects */
+}
+
+#next:hover, #previous:hover {
+    background-color: #164a8a; /* Change background color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+#contt{
+    position: relative;
+    left: 400px;
+}
+
+.animatedButton {
+    position: absolute;
+    left: 920px;
+    top: 180px;
+    padding: 15px 30px;
+    font-size: 15px;
+    width: 220px;
+    height: 50px;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    background-color: #48b9c1; /* Matches existing theme */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.animatedButton:hover {
+    background-color: #164a8a;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+.search-container {
+    position: relative;
+    top: -55px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.themedSearchBar {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #48b9c1; /* Border color matching theme */
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* White text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.themedSearchBar:focus {
+    outline: none;
+    border-color: #1eded5; /* Change border color on focus */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on focus */
+}
+
+.themedSearchBar::placeholder {
+    color: #bbb; /* Placeholder text color */
+}
+
+
+.albums{
+    margin: 20px 30px;
+    margin-bottom: 220px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    flex-direction:row;
+    font-size: 10px;
+    position: relative;
+    user-select: none;
+    width: 95%;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.albums::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust for border thickness */
+    left: 0px; /* Adjust for border thickness */
+    right: 0px;
+    bottom: 0px;
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Initial border color */
+    border-radius: 10px; /* Match border-radius of the image */
+    animation: glow 1.6s infinite alternate;
+}
+
+.albums h1{
+    position: relative;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.albums{
+    padding-top: 85px;
+}
+
+.imgbackround{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 135px;
+    height: 170px;
+    display: flex;
+    
+}
+
+.imgbackround a{
+    position: relative;
+    left: -170px;
+    top: 3px;
+}
+
+#ahoney{
+    position: absolute;
+    left: 70px;
+    top: 160px;
+    display: block;
+}
+
+#ahoneys{
+    position: absolute;
+    left: 460px;
+    top: 160px;
+    display: block;
+}
+
+#ahoneyss{
+    position: absolute;
+    left: 830px;
+    top: 160px;
+    display: block;
+}
+
+#abcs{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: green;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.albums img{
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 10px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.albums img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Add a deeper shadow */
+}
+
+#newsonglogo{
+    position: relative;
+    left: -100px;
+}
+
+#stoner{
+    position: relative;
+    left: -120px;
+}
+
+#newbig{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -110px;
+    left: -148px;
+}
+#newbigplaylist{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -216px;
+    left: -270px;
+}
+
+#slnew{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 4px;
+    position: relative;
+    left: -20px;
+}
+#slp{
+    font-size: 19px;
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
+    color: white;
+    margin-top: 22px;
+    margin-left: -50px;
+}
+
+
+.left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+
+  .punjabisinger button {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    border: 2px solid rgb(99, 99, 99);
+    border-radius: 10px;
+}
+
+.punjabisinger button:hover{
+      border: 2px solid white;
+    color: #164a8a;
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.514);
+  }
+.panjabisingerslist { /* Ensure the element is scrollable */
+    scrollbar-width: thin; /* For Firefox */
+    animation: glowforscrollbar 1.6s infinite alternate;
+}
+
+.panjabisingerslist::-webkit-scrollbar {
+    width: 0px;
+}
+
+.panjabisingerslist::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    
+}
+
+.panjabisingerslist::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+
+.panjabisingerslist::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+@keyframes glowforscrollbar {
+    0% {
+        scrollbar-color: rgba(0, 255, 191, 0.5) #000000;
+    }
+    20% {
+        scrollbar-color: rgba(0, 255, 132, 0.5) #000000;
+    }
+    40% {
+        scrollbar-color: rgba(0, 242, 255, 0.5) #000000;
+    }
+    60% {
+        scrollbar-color: rgb(38, 0, 255) #000000;
+    }
+    100% {
+        scrollbar-color: rgb(255, 0, 0) #000000;
+    }
+}

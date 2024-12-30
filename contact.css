@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&family=Martian+Mono:wght@100..800&family=Protest+Riot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nmain{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: red;
+}
+
+.nullmain{
+    width: 1257px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.fillmain{
+    width: 100%;
+    float: left;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    align-content: center;
+}
+
+nav h1{
+    position: relative;
+    top: 5px;
+    margin-left: 40px;
+    font-family: martian mono;
+}
+
+nav a{
+    position: relative;
+    color: white;
+    text-align: right;
+    margin-top: 30px;
+    left: 950px;
+    top: -16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 40px;
+}
+
+.khkhi{
+    background-image: url(srbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    color: white;
+}
+
+#con{
+    margin-top: 150px;
+    margin-left: 120px;
+    font-size: 50px;
+}
+
+#pcon{
+    margin-top: 50px;
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+#pconimg{
+    width: 160px;
+    height: 60px;
+    background: transparent;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.choko{
+    min-height: 168px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+}
+
+.choko p{
+    margin-top: 20px;
+    font-family: Kalnia Glaze;
+}
+
+.mtop{
+    margin-top: 10px;
+    font-family: protestriote Static;
+    font: bold;
+    color: goldenrod;
+}
+
+#ico{
+    margin-left: -10px;
+    font-size: 20px;
+    color: white;
+}
+
+#wconimg{
+    width: 120px;
+    height: 80px;
+    margin-left: 120px ;
+}
